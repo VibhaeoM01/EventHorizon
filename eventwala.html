@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .events-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .event-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px;
+            width: 250px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .event-card img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .event-card h3 {
+            margin: 16px 0 8px;
+            font-size: 1.25em;
+        }
+
+        .event-card p {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .event-card button {
+            background-color: #6a0dad;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .event-card button:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+          <div class="nav1">
+            <div class="logo">
+              <img src="logo.png" alt="Logo">
+              <a href="index.html" style="text-decoration: none;"><h1>EventHorizon</h1></a>
+            </div>
+          </div>
+          <div class="hamburger" id="hamburger">
+            &#9776;
+          </div>
+          <div class="nav2" id="sideNav">
+            <a href="eventwala.html">Events</a>
+            <a href="blog.html">Blog</a>
+            <a href="Gallery.html">Gallery</a>
+            <button>Host an Event</button>
+            <div  id="button"><a href="login.html" style="color: white;">Login</a></div>
+          </div>
+        </div>
+        </div>
+    <!-- Music Events -->
+    <h2>Music Events</h2>
+    <div class="events-container">
+        <div class="event-card">
+            <img src="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg" alt="Jazz Festival">
+            <h3>Jazz Festival</h3>
+            <p>Date: March 12, 2024</p>
+            <p>Location: Taj Mahal Palace, Mumbai, Maharashtra, India</p>
+            <button>View Event</button>
+        </div>
+
+        <div class="event-card">
+            <img src="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg" alt="Rock Concert">
+            <h3>Rock Concert</h3>
+            <p>Date: April 5, 2024</p>
+            <p>Location: Hard Rock Cafe, Bangalore, Karnataka, India</p>
+            <button>View Event</button>
+        </div>
+
+        <div class="event-card">
+            <img src="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg" alt="Classical Night">
+            <h3>Classical Night</h3>
+            <p>Date: May 20, 2024</p>
+            <p>Location: Royal Opera House, Mumbai, Maharashtra, India</p>
+            <button>View Event</button>
+        </div>
+
+        <div class="event-card">
+            <img src="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg" alt="Electronic Festival">
+            <h3>Electronic Festival</h3>
+            <p>Date: June 15, 2024</p>
+            <p>Location: Goa Beach, Goa, India</p>
+            <button>View Event</button>
+        </div>
+    </div>
+
+    <!-- Comedy Shows -->
+    <h2>Comedy Shows</h2>
+    <div class="events-container">
+        <div class="event-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpUx1H4FkioFQfEOUDru6JJxYxf7FLGrbiKA&s" alt="Stand-Up Night">
+            <h3>Stand-Up Night</h3>
+            <p>Date: March 20, 2024</p>
+            <p>Location: The Comedy Store, Mumbai, Maharashtra, India</p>
+            <button>View Event</button>
+        </div>
+
+        <div class="event-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpUx1H4FkioFQfEOUDru6JJxYxf7FLGrbiKA&s" alt="Improv Comedy">
+            <h3>Improv Comedy</h3>
+            <p>Date: April 10, 2024</p>
+            <p>Location: The Canvas Laugh Club, Delhi, India</p>
+            <button>View Event</button>
+        </div>
+
+        <div class="event-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpUx1H4FkioFQfEOUDru6JJxYxf7FLGrbiKA&s" alt="Open Mic Night">
+            <h3>Open Mic Night</h3>
+            <p>Date: May 18, 2024</p>
+            <p>Location: The Habitat, Mumbai, Maharashtra, India</p>
+            <button>View Event</button>
+        </div>
+
+        <div class="event-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpUx1H4FkioFQfEOUDru6JJxYxf7FLGrbiKA&s" alt="Comedy Festival">
+            <h3>Comedy Festival</h3>
+            <p>Date: June 22, 2024</p>
+            <p>Location: JLN Stadium, Chennai, Tamil Nadu, India</p>
+            <button>View Event</button>
+        </div>
+    </div>
+
+    <!-- Art Events -->
+    <h2>Art Events</h2>
+    <div class="events-container">
+        <div class="event-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpu9SvbCMzt3WyKQGWvMT7uzHBMUsUGrXo0A&s" alt="Art Exhibition">
+            <h3>Art Exhibition</h3>
+            <p>Date: March 28, 2024</p>
+            <p>Location: Jehangir Art Gallery, Mumbai, Maharashtra, India</p>
+            <button>View Event</button>
+        </div>
+
+        <div class="event-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpu9SvbCMzt3WyKQGWvMT7uzHBMUsUGrXo0A&s" alt="Sculpture Workshop">
+            <h3>Sculpture Workshop</h3>
+            <p>Date: April 15, 2024</p>
+            <p>Location: Lalit Kala Academy, Delhi, India</p>
+            <button>View Event</button>
+        </div>
+
+        <div class="event-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpu9SvbCMzt3WyKQGWvMT7uzHBMUsUGrXo0A&s" alt="Photography Exhibition">
+            <h3>Photography Exhibition</h3>
+            <p>Date: May 25, 2024</p>
+            <p>Location: National Gallery of Modern Art, Bangalore, Karnataka, India</p>
+            <button>View Event</button>
+        </div>
+
+        <div class="event-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpu9SvbCMzt3WyKQGWvMT7uzHBMUsUGrXo0A&s" alt="Street Art Festival">
+            <h3>Street Art Festival</h3>
+            <p>Date: June 30, 2024</p>
+            <p>Location: Lodhi Art District, Delhi, India</p>
+            <button>View Event</button>
+        </div>
+    </div>
+</body>
+</html>

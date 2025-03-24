@@ -1,0 +1,370 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.main {
+  width: 100%;
+  /* padding: 20px; */
+}
+
+/* Navigation Bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6a0dad;
+}
+
+/* Navigation Links and Buttons */
+.nav2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav2 a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav2 a:hover {
+  color: #6a0dad;
+}
+
+.nav2 button,#button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  /* position: relative; */
+}
+
+.nav2 button:hover #button:hover {
+  background-color: #550da2;
+}
+
+.button #button {
+  position: relative;
+}
+
+.button span::after   {
+  content: '>>';
+  /* position: absolute; */
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: opacity 0.5s, right 0.5s;
+}
+
+.button:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #6a0dad;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 50vh;
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* z-index: 1; */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  left: 10%;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.btn-discover {
+  background-color: #6a0dad;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  position: absolute;
+}
+
+.btn-event {
+  display: inline-block;
+  width: 40%;
+  color: white;
+  border: 2px solid #6a0dad;
+  background-color: #6a0dad;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-event span {
+  display: inline-block;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.btn-event span:after {
+  content: '\00bb'; /* Adds the » symbol */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s ease
+}
+
+.btn-event:hover span {
+  padding-right: 12px; /* Moves the text to the left */
+  /* font-size: 0px; */
+}
+
+.btn-event:hover span:after {
+  opacity: 1;
+  right: 0; /* Moves the arrow into view */
+}
+
+
+
+
+/* .btn-event:hover {
+  background-color: #6a0dad;
+  color: white;
+} */
+
+.btn-discover:hover {
+  background-color: #550da2;
+}
+
+/* Featured Events Section */
+.featured-events {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.featured-events h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.featured-events p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Events Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Event Card */
+.event-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 450px;
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.btn-discover {
+  background-color: #6a0dad;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  position: absolute;
+  left: 0%;
+}
+
+.btn-discover:hover {
+  background-color: #550da2;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav2 {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: #6a0dad;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    z-index: 10;
+  }
+
+  .nav2.open {
+    width: 250px;
+  }
+
+  .nav2 a {
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .nav2 button {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero-content {
+    left: 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .btn-discover {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    left: 0;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+.h1{
+  text-align: center;
+  line-height: 4rem;
+}

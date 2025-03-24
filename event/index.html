@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventHorizon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="nav">
+      <div class="nav1">
+        <div class="logo">
+          <img src="logo.png" alt="Logo">
+          <a href="index.html" style="text-decoration: none;"><h1>EventHorizon</h1></a>
+        </div>
+      </div>
+      <div class="hamburger" id="hamburger">
+        &#9776;
+      </div>
+      <div class="nav2" id="sideNav">
+        <a href="eventwala.html">Events</a>
+        <a href="blog.html">Blog</a>
+        <a href="Gallery.html">Gallery</a>
+        <button>Host an Event</button>
+        <div  id="button"><a href="login.html" style="color: white;">Login</a></div>
+      </div>
+    </div>
+    </div>
+
+    <div class="hero-section">
+      <div class="hero-content">
+          <h1>Find an event</h1>
+          <p>Discover events happening around you</p>
+          <a href="#" class="btn-discover">Discover events</a>
+      </div>
+    </div>
+
+    <!-- Your existing Featured Events section -->
+    <section class="featured-events">
+      <h2>Featured Events</h2>
+      <p>Explore our top events happening near you. Find the perfect event to attend!</p>
+      <div class="events-grid">
+          <div class="event-card">
+              <img src="one.jpeg" alt="Jazz Festival">
+              <h3>Jazz Festival</h3>
+              <p>Date: March 12, 2024</p>
+              <p>Location:  Taj Mahal Palace, Mumbai, Maharashtra, India</p>
+              <a href="jazz.html" class="btn-event"><span>View Event</span></a>
+          </div>
+          <div class="event-card">
+              <img src="one.jpeg" alt="Tech Summit">
+              <h3>Tech Summit</h3>
+              <p>Date: April 5, 2024</p>
+              <p>Location:  Bombay Convention & Exhibition Centre (BCEC), Maharashtra, India</p>
+              <a href="#" class="btn-event"><span>View Event</span></a>
+          </div>
+          <div class="event-card">
+              <img src="one.jpeg" alt="Art Expo">
+              <h3>Art Expo</h3>
+              <p>Date: May 22, 2024</p>
+              <p>Location: Pune Biennale Foundation, Pune, Maharashtra, India</p>
+              <a href="#" class="btn-event"><span>View Event</span></a>
+          </div>
+          <div class="event-card">
+              <img src="one.jpeg" alt="Food Fest">
+              <h3>Food Fest</h3>
+              <p>Date: June 15, 2024</p>
+              <p>Location:  Phoenix Marketcity, Mumbai, Maharashtra, India</p>
+              <a href="#" class="btn-event"><span>View Event</span></a>
+          </div>
+          <!-- Additional Event Cards -->
+          <div class="event-card">
+              <img src="one.jpeg" alt="Film Festival">
+              <h3>Film Festival</h3>
+              <p>Date: August 8, 2024</p>
+              <p>Location: FTII (Film and Television Institute of India), Pune, Maharashtra, India</p>
+              <a href="#" class="btn-event"><span>View Event</span></a>
+          </div>
+          <div class="event-card">
+              <img src="one.jpeg" alt="Music Concert">
+              <h3>Music Concert</h3>
+              <p>Date: September 21, 2024</p>
+              <p>Location: Hard Rock Cafe, Pune, Maharashtra, India</p>
+              <a href="#" class="btn-event"><span>View Event</span></a>
+          </div>
+      </div>
+  </section>
+  
+  </div>
+
+
+  <footer class="footer">
+    <div class="container" style="height: 150px;">
+        <div class="footer-content">
+            <div class="subscribe-section" style="display:flex; flex-direction: column; align-items: center;">
+                <h2 style="margin-top:10px">Subscribe to our newsletter</h2>
+                <div class="subscribe-form" style="display: flex; justify-content: center;margin-top: 13px;">
+                    <div class="inps" style="background-color: rgb(255, 255, 255); height: 30px; display: flex; margin: 0px 5px;"><input type="email"  style="margin: 2px; border: none; outline: none;" placeholder="Email"></div>
+                    <button type="button" style="border-radius: 10px; border: none;background-color: #6a0dad; color: white; padding: 3px;">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="footer-links" style="display: flex; justify-content:space-around; margin-top: 40px">
+                <div class="brand">
+                    <!-- <img src="logo.png" alt="Logo"> -->
+                    <span>EventHorizon</span>
+                </div>
+                <ul>
+                    <div style="display: flex; gap: 30px; text-decoration: none;">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Careers</a></li>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- <div class="footer-bottom">
+                <div class="language-select">
+                    <select>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        Add other languages here
+                    </select>
+                </div>
+
+                <p>&copy; 2024 Brand, Inc. - <a href="#">Privacy</a> • <a href="#">Terms</a> • <a href="#">Sitemap</a></p> -->
+
+                <!-- <div class="social-icons">
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</footer>
+  <script>
+    // JavaScript to toggle the sidenav
+    const hamburger = document.getElementById('hamburger');
+    const sideNav = document.getElementById('sideNav');
+
+    hamburger.addEventListener('click', () => {
+      sideNav.classList.toggle('open');
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.js">
+    
+  </script>
+</body>
+</html>
